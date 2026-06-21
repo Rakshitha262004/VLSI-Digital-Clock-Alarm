@@ -1,1 +1,172 @@
-
+warning: Some design elements have no explicit time unit and/or
+       : time precision. This may cause confusing timing results.
+       : Affected design elements are:
+       :   -- module alarm_comparator declared here: design.sv:6
+       :   -- module clock_divider declared here: design.sv:80
+       :   -- module clock_divider_pulse declared here: design.sv:51
+       :   -- module display_mux declared here: design.sv:112
+       :   -- module hours_counter declared here: design.sv:168
+       :   -- module minutes_counter declared here: design.sv:193
+       :   -- module seconds_counter declared here: design.sv:224
+       :   -- module seg_decoder declared here: design.sv:256
+       :   -- module top_digital_clock declared here: design.sv:283
+VCD info: dumpfile digital_clock.vcd opened for output.
+T=0 | rst=1 | H:M:S = 0:0:0 | alarm_en=0 | alarm_out=0
+T=20000 : RESET RELEASED. hour=0 min=0 sec=0
+T=20000 | rst=0 | H:M:S = 0:0:0 | alarm_en=0 | alarm_out=0
+T=125000 | rst=0 | H:M:S = 0:0:1 | alarm_en=0 | alarm_out=0
+T=220000 : TIME CHECK hour=0 min=0 sec=1
+T=220000 | rst=0 | H:M:S = 0:0:1 | alarm_en=1 | alarm_out=0
+T=225000 | rst=0 | H:M:S = 0:0:2 | alarm_en=1 | alarm_out=0
+T=230000 : ALARM SET to 0:1, enable=1
+T=325000 | rst=0 | H:M:S = 0:0:3 | alarm_en=1 | alarm_out=0
+T=425000 | rst=0 | H:M:S = 0:0:4 | alarm_en=1 | alarm_out=0
+T=525000 | rst=0 | H:M:S = 0:0:5 | alarm_en=1 | alarm_out=0
+T=625000 | rst=0 | H:M:S = 0:0:6 | alarm_en=1 | alarm_out=0
+T=725000 | rst=0 | H:M:S = 0:0:7 | alarm_en=1 | alarm_out=0
+T=825000 | rst=0 | H:M:S = 0:0:8 | alarm_en=1 | alarm_out=0
+T=925000 | rst=0 | H:M:S = 0:0:9 | alarm_en=1 | alarm_out=0
+T=1025000 | rst=0 | H:M:S = 0:0:10 | alarm_en=1 | alarm_out=0
+T=1125000 | rst=0 | H:M:S = 0:0:11 | alarm_en=1 | alarm_out=0
+T=1225000 | rst=0 | H:M:S = 0:0:12 | alarm_en=1 | alarm_out=0
+T=1325000 | rst=0 | H:M:S = 0:0:13 | alarm_en=1 | alarm_out=0
+T=1425000 | rst=0 | H:M:S = 0:0:14 | alarm_en=1 | alarm_out=0
+T=1525000 | rst=0 | H:M:S = 0:0:15 | alarm_en=1 | alarm_out=0
+T=1625000 | rst=0 | H:M:S = 0:0:16 | alarm_en=1 | alarm_out=0
+T=1725000 | rst=0 | H:M:S = 0:0:17 | alarm_en=1 | alarm_out=0
+T=1825000 | rst=0 | H:M:S = 0:0:18 | alarm_en=1 | alarm_out=0
+T=1925000 | rst=0 | H:M:S = 0:0:19 | alarm_en=1 | alarm_out=0
+T=2025000 | rst=0 | H:M:S = 0:0:20 | alarm_en=1 | alarm_out=0
+T=2125000 | rst=0 | H:M:S = 0:0:21 | alarm_en=1 | alarm_out=0
+T=2225000 | rst=0 | H:M:S = 0:0:22 | alarm_en=1 | alarm_out=0
+T=2325000 | rst=0 | H:M:S = 0:0:23 | alarm_en=1 | alarm_out=0
+T=2425000 | rst=0 | H:M:S = 0:0:24 | alarm_en=1 | alarm_out=0
+T=2525000 | rst=0 | H:M:S = 0:0:25 | alarm_en=1 | alarm_out=0
+T=2625000 | rst=0 | H:M:S = 0:0:26 | alarm_en=1 | alarm_out=0
+T=2725000 | rst=0 | H:M:S = 0:0:27 | alarm_en=1 | alarm_out=0
+T=2825000 | rst=0 | H:M:S = 0:0:28 | alarm_en=1 | alarm_out=0
+T=2925000 | rst=0 | H:M:S = 0:0:29 | alarm_en=1 | alarm_out=0
+T=3025000 | rst=0 | H:M:S = 0:0:30 | alarm_en=1 | alarm_out=0
+T=3125000 | rst=0 | H:M:S = 0:0:31 | alarm_en=1 | alarm_out=0
+T=3225000 | rst=0 | H:M:S = 0:0:32 | alarm_en=1 | alarm_out=0
+T=3325000 | rst=0 | H:M:S = 0:0:33 | alarm_en=1 | alarm_out=0
+T=3425000 | rst=0 | H:M:S = 0:0:34 | alarm_en=1 | alarm_out=0
+T=3525000 | rst=0 | H:M:S = 0:0:35 | alarm_en=1 | alarm_out=0
+T=3625000 | rst=0 | H:M:S = 0:0:36 | alarm_en=1 | alarm_out=0
+T=3725000 | rst=0 | H:M:S = 0:0:37 | alarm_en=1 | alarm_out=0
+T=3825000 | rst=0 | H:M:S = 0:0:38 | alarm_en=1 | alarm_out=0
+T=3925000 | rst=0 | H:M:S = 0:0:39 | alarm_en=1 | alarm_out=0
+T=4025000 | rst=0 | H:M:S = 0:0:40 | alarm_en=1 | alarm_out=0
+T=4125000 | rst=0 | H:M:S = 0:0:41 | alarm_en=1 | alarm_out=0
+T=4225000 | rst=0 | H:M:S = 0:0:42 | alarm_en=1 | alarm_out=0
+T=4325000 | rst=0 | H:M:S = 0:0:43 | alarm_en=1 | alarm_out=0
+T=4425000 | rst=0 | H:M:S = 0:0:44 | alarm_en=1 | alarm_out=0
+T=4525000 | rst=0 | H:M:S = 0:0:45 | alarm_en=1 | alarm_out=0
+T=4625000 | rst=0 | H:M:S = 0:0:46 | alarm_en=1 | alarm_out=0
+T=4725000 | rst=0 | H:M:S = 0:0:47 | alarm_en=1 | alarm_out=0
+T=4825000 | rst=0 | H:M:S = 0:0:48 | alarm_en=1 | alarm_out=0
+T=4925000 | rst=0 | H:M:S = 0:0:49 | alarm_en=1 | alarm_out=0
+T=5025000 | rst=0 | H:M:S = 0:0:50 | alarm_en=1 | alarm_out=0
+T=5125000 | rst=0 | H:M:S = 0:0:51 | alarm_en=1 | alarm_out=0
+T=5225000 | rst=0 | H:M:S = 0:0:52 | alarm_en=1 | alarm_out=0
+T=5325000 | rst=0 | H:M:S = 0:0:53 | alarm_en=1 | alarm_out=0
+T=5425000 | rst=0 | H:M:S = 0:0:54 | alarm_en=1 | alarm_out=0
+T=5525000 | rst=0 | H:M:S = 0:0:55 | alarm_en=1 | alarm_out=0
+T=5625000 | rst=0 | H:M:S = 0:0:56 | alarm_en=1 | alarm_out=0
+T=5725000 | rst=0 | H:M:S = 0:0:57 | alarm_en=1 | alarm_out=0
+T=5825000 | rst=0 | H:M:S = 0:0:58 | alarm_en=1 | alarm_out=0
+T=5925000 | rst=0 | H:M:S = 0:0:59 | alarm_en=1 | alarm_out=0
+T=6025000 | rst=0 | H:M:S = 0:0:0 | alarm_en=1 | alarm_out=0
+T=6035000 | rst=0 | H:M:S = 0:1:0 | alarm_en=1 | alarm_out=1
+T=6125000 | rst=0 | H:M:S = 0:1:1 | alarm_en=1 | alarm_out=0
+T=6225000 | rst=0 | H:M:S = 0:1:2 | alarm_en=1 | alarm_out=0
+T=6325000 | rst=0 | H:M:S = 0:1:3 | alarm_en=1 | alarm_out=0
+T=6425000 | rst=0 | H:M:S = 0:1:4 | alarm_en=1 | alarm_out=0
+T=6525000 | rst=0 | H:M:S = 0:1:5 | alarm_en=1 | alarm_out=0
+T=6625000 | rst=0 | H:M:S = 0:1:6 | alarm_en=1 | alarm_out=0
+T=6725000 | rst=0 | H:M:S = 0:1:7 | alarm_en=1 | alarm_out=0
+T=6825000 | rst=0 | H:M:S = 0:1:8 | alarm_en=1 | alarm_out=0
+T=6925000 | rst=0 | H:M:S = 0:1:9 | alarm_en=1 | alarm_out=0
+T=7025000 | rst=0 | H:M:S = 0:1:10 | alarm_en=1 | alarm_out=0
+T=7125000 | rst=0 | H:M:S = 0:1:11 | alarm_en=1 | alarm_out=0
+T=7225000 | rst=0 | H:M:S = 0:1:12 | alarm_en=1 | alarm_out=0
+T=7230000 : POST-ALARM-WINDOW CHECK hour=0 min=1 sec=12 alarm_out=0
+T=7230000 | rst=0 | H:M:S = 0:1:12 | alarm_en=0 | alarm_out=0
+T=7325000 | rst=0 | H:M:S = 0:1:13 | alarm_en=0 | alarm_out=0
+T=7425000 | rst=0 | H:M:S = 0:1:14 | alarm_en=0 | alarm_out=0
+T=7430000 : ALARM DISABLED CHECK alarm_out=0 (expect 0)
+T=7430000 | rst=0 | H:M:S = 0:1:14 | alarm_en=1 | alarm_out=0
+T=7525000 | rst=0 | H:M:S = 0:1:15 | alarm_en=1 | alarm_out=0
+T=7625000 | rst=0 | H:M:S = 0:1:16 | alarm_en=1 | alarm_out=0
+T=7725000 | rst=0 | H:M:S = 0:1:17 | alarm_en=1 | alarm_out=0
+T=7825000 | rst=0 | H:M:S = 0:1:18 | alarm_en=1 | alarm_out=0
+T=7925000 | rst=0 | H:M:S = 0:1:19 | alarm_en=1 | alarm_out=0
+T=8025000 | rst=0 | H:M:S = 0:1:20 | alarm_en=1 | alarm_out=0
+T=8125000 | rst=0 | H:M:S = 0:1:21 | alarm_en=1 | alarm_out=0
+T=8225000 | rst=0 | H:M:S = 0:1:22 | alarm_en=1 | alarm_out=0
+T=8325000 | rst=0 | H:M:S = 0:1:23 | alarm_en=1 | alarm_out=0
+T=8425000 | rst=0 | H:M:S = 0:1:24 | alarm_en=1 | alarm_out=0
+T=8525000 | rst=0 | H:M:S = 0:1:25 | alarm_en=1 | alarm_out=0
+T=8625000 | rst=0 | H:M:S = 0:1:26 | alarm_en=1 | alarm_out=0
+T=8725000 | rst=0 | H:M:S = 0:1:27 | alarm_en=1 | alarm_out=0
+T=8825000 | rst=0 | H:M:S = 0:1:28 | alarm_en=1 | alarm_out=0
+T=8925000 | rst=0 | H:M:S = 0:1:29 | alarm_en=1 | alarm_out=0
+T=9025000 | rst=0 | H:M:S = 0:1:30 | alarm_en=1 | alarm_out=0
+T=9125000 | rst=0 | H:M:S = 0:1:31 | alarm_en=1 | alarm_out=0
+T=9225000 | rst=0 | H:M:S = 0:1:32 | alarm_en=1 | alarm_out=0
+T=9325000 | rst=0 | H:M:S = 0:1:33 | alarm_en=1 | alarm_out=0
+T=9425000 | rst=0 | H:M:S = 0:1:34 | alarm_en=1 | alarm_out=0
+T=9525000 | rst=0 | H:M:S = 0:1:35 | alarm_en=1 | alarm_out=0
+T=9625000 | rst=0 | H:M:S = 0:1:36 | alarm_en=1 | alarm_out=0
+T=9725000 | rst=0 | H:M:S = 0:1:37 | alarm_en=1 | alarm_out=0
+T=9825000 | rst=0 | H:M:S = 0:1:38 | alarm_en=1 | alarm_out=0
+T=9925000 | rst=0 | H:M:S = 0:1:39 | alarm_en=1 | alarm_out=0
+T=10025000 | rst=0 | H:M:S = 0:1:40 | alarm_en=1 | alarm_out=0
+T=10125000 | rst=0 | H:M:S = 0:1:41 | alarm_en=1 | alarm_out=0
+T=10225000 | rst=0 | H:M:S = 0:1:42 | alarm_en=1 | alarm_out=0
+T=10325000 | rst=0 | H:M:S = 0:1:43 | alarm_en=1 | alarm_out=0
+T=10425000 | rst=0 | H:M:S = 0:1:44 | alarm_en=1 | alarm_out=0
+T=10525000 | rst=0 | H:M:S = 0:1:45 | alarm_en=1 | alarm_out=0
+T=10625000 | rst=0 | H:M:S = 0:1:46 | alarm_en=1 | alarm_out=0
+T=10725000 | rst=0 | H:M:S = 0:1:47 | alarm_en=1 | alarm_out=0
+T=10825000 | rst=0 | H:M:S = 0:1:48 | alarm_en=1 | alarm_out=0
+T=10925000 | rst=0 | H:M:S = 0:1:49 | alarm_en=1 | alarm_out=0
+T=11025000 | rst=0 | H:M:S = 0:1:50 | alarm_en=1 | alarm_out=0
+T=11125000 | rst=0 | H:M:S = 0:1:51 | alarm_en=1 | alarm_out=0
+T=11225000 | rst=0 | H:M:S = 0:1:52 | alarm_en=1 | alarm_out=0
+T=11325000 | rst=0 | H:M:S = 0:1:53 | alarm_en=1 | alarm_out=0
+T=11425000 | rst=0 | H:M:S = 0:1:54 | alarm_en=1 | alarm_out=0
+T=11525000 | rst=0 | H:M:S = 0:1:55 | alarm_en=1 | alarm_out=0
+T=11625000 | rst=0 | H:M:S = 0:1:56 | alarm_en=1 | alarm_out=0
+T=11725000 | rst=0 | H:M:S = 0:1:57 | alarm_en=1 | alarm_out=0
+T=11825000 | rst=0 | H:M:S = 0:1:58 | alarm_en=1 | alarm_out=0
+T=11925000 | rst=0 | H:M:S = 0:1:59 | alarm_en=1 | alarm_out=0
+T=12025000 | rst=0 | H:M:S = 0:1:0 | alarm_en=1 | alarm_out=0
+T=12035000 | rst=0 | H:M:S = 0:2:0 | alarm_en=1 | alarm_out=1
+T=12125000 | rst=0 | H:M:S = 0:2:1 | alarm_en=1 | alarm_out=0
+T=12225000 | rst=0 | H:M:S = 0:2:2 | alarm_en=1 | alarm_out=0
+T=12325000 | rst=0 | H:M:S = 0:2:3 | alarm_en=1 | alarm_out=0
+T=12425000 | rst=0 | H:M:S = 0:2:4 | alarm_en=1 | alarm_out=0
+T=12525000 | rst=0 | H:M:S = 0:2:5 | alarm_en=1 | alarm_out=0
+T=12625000 | rst=0 | H:M:S = 0:2:6 | alarm_en=1 | alarm_out=0
+T=12725000 | rst=0 | H:M:S = 0:2:7 | alarm_en=1 | alarm_out=0
+T=12825000 | rst=0 | H:M:S = 0:2:8 | alarm_en=1 | alarm_out=0
+T=12925000 | rst=0 | H:M:S = 0:2:9 | alarm_en=1 | alarm_out=0
+T=13025000 | rst=0 | H:M:S = 0:2:10 | alarm_en=1 | alarm_out=0
+T=13125000 | rst=0 | H:M:S = 0:2:11 | alarm_en=1 | alarm_out=0
+T=13225000 | rst=0 | H:M:S = 0:2:12 | alarm_en=1 | alarm_out=0
+T=13325000 | rst=0 | H:M:S = 0:2:13 | alarm_en=1 | alarm_out=0
+T=13425000 | rst=0 | H:M:S = 0:2:14 | alarm_en=1 | alarm_out=0
+T=13525000 | rst=0 | H:M:S = 0:2:15 | alarm_en=1 | alarm_out=0
+T=13625000 | rst=0 | H:M:S = 0:2:16 | alarm_en=1 | alarm_out=0
+T=13725000 | rst=0 | H:M:S = 0:2:17 | alarm_en=1 | alarm_out=0
+T=13825000 | rst=0 | H:M:S = 0:2:18 | alarm_en=1 | alarm_out=0
+T=13925000 | rst=0 | H:M:S = 0:2:19 | alarm_en=1 | alarm_out=0
+T=14025000 | rst=0 | H:M:S = 0:2:20 | alarm_en=1 | alarm_out=0
+T=14125000 | rst=0 | H:M:S = 0:2:21 | alarm_en=1 | alarm_out=0
+T=14225000 | rst=0 | H:M:S = 0:2:22 | alarm_en=1 | alarm_out=0
+T=14325000 | rst=0 | H:M:S = 0:2:23 | alarm_en=1 | alarm_out=0
+T=14425000 | rst=0 | H:M:S = 0:2:24 | alarm_en=1 | alarm_out=0
+T=14440000 : SECOND ALARM CHECK hour=0 min=2 sec=24 alarm_out=0
+=== SIMULATION COMPLETE ===
+testbench.sv:130: $finish called at 14440000 (1ps)
