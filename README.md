@@ -81,8 +81,8 @@ See `waveforms/` for captured simulation results showing:
 ## Waveforms Screenshots
 |waveform|waveform|
 |--------|--------|
-|![waveform](waveforms/waveform_sh_1.png|![waveform](waveforms/waveform_sh_2.png|
-|![waveform](waveforms/waveform_sh_3.png|![waveform](waveforms/waveform_sh_4.png|
+|![waveform](waveforms/waveform_sh_1.png)|![waveform](waveforms/waveform_sh_2.png)|
+|![waveform](waveforms/waveform_sh_3.png)|![waveform](waveforms/waveform_sh_4.png)|
 
 ## Future Improvements
 - 12-hour/24-hour display toggle
