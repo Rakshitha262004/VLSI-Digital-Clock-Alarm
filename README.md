@@ -1,7 +1,7 @@
 # VLSI-Based Digital Clock with Alarm Functionality
 
 A complete Verilog/SystemVerilog implementation of a 24-hour digital clock
-with configurable alarm functionality, seven-segment display output, and
+with configurable alarm functionality, seven-segment display output, and 
 full simulation + FPGA synthesis verification.
 
 ## Overview
