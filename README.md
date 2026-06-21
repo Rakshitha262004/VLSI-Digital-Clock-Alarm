@@ -71,11 +71,18 @@ See `waveforms/` for captured simulation results showing:
 - Seconds/minutes/hours rollover behavior
 - Alarm match pulse generation
 
-## Synthesis Report
-See `reports/` for Vivado utilization and timing summary.
+## Synthesis Report screenshots
+|sim_log1|sim_log2|sim_log3|sim_log4|
+|--------|--------|--------|--------|
+|![simulation](outputs/1.png)|![simulation](outputs/2.png)|![simulation](outputs/3.png)|![simulation](outputs/4.png)|
+|![simulation](outputs/5.png)|![simulation](outputs/6.png)|![simulation](outputs/7.png)|![simulation](outputs/8.png)|
+|![simulation](outputs/9.png)|![simulation](outputs/10.png)|![simulation](outputs/11.png)|![simulation](outputs/12.png)|
 
-## Screenshots
-See `images/` for RTL schematic, testbench console output, and waveform captures.
+## Waveforms Screenshots
+|waveform|waveform|
+|--------|--------|
+|![waveform](waveforms/waveform_sh_1.png|![waveform](waveforms/waveform_sh_2.png|
+|![waveform](waveforms/waveform_sh_3.png|![waveform](waveforms/waveform_sh_4.png|
 
 ## Future Improvements
 - 12-hour/24-hour display toggle
